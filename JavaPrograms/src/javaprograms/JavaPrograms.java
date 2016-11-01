@@ -16,6 +16,9 @@ public class JavaPrograms {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        // calling the coin toss program
+        CoinToss ct = new CoinToss();
+        ct.printResult();
     }
     
 }
