@@ -23,7 +23,7 @@ public class JavaPrograms {
     }
     public void switchProgram(){
         System.out.println("Please Enter the following Number to run that program");
-        System.out.println("1 for Cointoss \n2 for NumberGuessGame.");
+        System.out.println("1 for Cointoss \n2 for NumberGuessGame.\n3 for Dictionary.");
         
         Scanner sc = new Scanner(System.in);
         int gameOption = sc.nextInt();
@@ -34,8 +34,10 @@ public class JavaPrograms {
             case 2:  NumberGuess ng = new NumberGuess();
                      ng.play();
                      break;
+            case 3:  EngSpanDictionary engSpanDict = new EngSpanDictionary();
+                     engSpanDict.startDemo();
+                     break;
             default: System.out.println("Please select Valid Option. Thank You.");
         }
     }
-    
 }
